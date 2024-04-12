@@ -8,7 +8,7 @@ ls -lah
 
 exec docker run \
     -v "/var/run/docker.sock:/var/run/docker.sock" \
-    -v "$(pwd):/galasa/.galasa" \
+    -v "$(pwd):/root/.galasa" \
     --entrypoint="/bin/galasactl" \
     --user="root" \
     icr.io/galasadev/galasa-cli-amd64:${INPUT_GALASACTL_VERSION} ${INPUT_GALASACTL_ARGS}
