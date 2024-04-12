@@ -1,0 +1,14 @@
+name: 'Galasa CLI tool'
+description: 'A GitHub Action that allows you to run the galasactl CLI tool'
+inputs:
+  galasactl_version:
+    description: 'The version of galasactl to run, defaults to latest'
+    required: false
+    default: 'latest'
+  galasactl_args:
+    description: 'Arguments to pass into galasactl'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
