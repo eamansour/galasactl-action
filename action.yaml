@@ -7,7 +7,10 @@ inputs:
     default: 'latest'
   galasactl_args:
     description: 'Arguments to pass into galasactl'
-    required: true
+    required: false
+  script:
+    description: 'A script of commands that may use galasactl'
+    required: false
 
 runs:
   using: 'docker'
